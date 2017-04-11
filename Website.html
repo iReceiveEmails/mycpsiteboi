@@ -1,0 +1,325 @@
+Skip to content
+Features Business Explore Pricing
+This repository
+Search
+Sign in or Sign up
+ Watch 1  Star 0  Fork 3 iwillriot/mycpsite
+ Code  Issues 0  Pull requests 0  Projects 0  Pulse  Graphs
+Branch: master Find file Copy pathmycpsite/lesson0/wills_code/polloloco.html
+6d50f92  9 days ago
+@iwillriot iwillriot make some final changes.
+1 contributor
+RawBlameHistory     
+862 lines (861 sloc)  30.4 KB
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Fast Food Places</title>
+      <meta name="This website shows some good fastfood places people can eat at." content="Fast Food Places">
+      <meta name="Kenny Simon" content="SitePoint">
+      <link rel="stylesheet" href="style.css">
+      <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+      <![endif]-->
+   </head>
+   <style>
+   body {
+	   
+       background-color: #FDA08D;  
+      }
+   </style>
+   <body>
+      <!--NavBar-->
+      <table border="2">
+         <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="Website.html">La Pizza Loca</a></td>
+            <td><a href="#">In n Out</a></td>
+            <td><a href="#">Little Ceasers</a></td>
+            <td><a href="dominoes.html">Dominoes Pizza</a></td>
+         </tr>
+      </table>
+      <hr />
+      <!--endNavBar-->
+      <div class="center">
+         <table>
+            <th colspan="2"><img src="pizzaLoca-logo.gif"></th>
+            <tr>
+               <td>
+                  <h2>The Nearnest Pizza Loca:</h2>
+               </td>
+               <td>
+                  <h2>It is located at:</h2>
+               </td>
+            </tr>
+            <tr>
+               <td><img src="49c138e65f91e547a589f501a541a9a7.png" width="510" height="494"></td>
+               <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4412.045291438833!2d-118.28404354581174!3d34.061842886635695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c77423ce1237%3A0xa8fb3169a039244c!2sLa+Pizza+Loca!5e0!3m2!1sen!2sus!4v1491701957025" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </tr>
+            <tr>
+               <td colspan="2">
+                  <p>Pizza Loca was one of the very first places my parents bought pizza from and i loved the pizza and kept buying pizza from there ever since.
+                     The Delivery service was great and efficient.
+                  </p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--***MENU TABLES***-->
+      <div id="menu">
+         <h1 class="menu">La Pizza Loca</h1>
+         <table id="nestedtable">
+            <tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Pizza</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Peperonni Pizza</td>
+                        <td>Medium</td>
+                        <td>$5.00</td>
+                     </tr>
+                     <tr>
+                        <td>Peperonni Pizza</td>
+                        <td>Large</td>
+                        <td>$6.50</td>
+                     </tr>
+                     <tr>
+                        <td>Peperonni Pizza</td>
+                        <td>Extra Large</td>
+                        <td>$8.00</td>
+                     </tr>
+                     <tr>
+                        <td>Mini Pizza W/ Peperonni</td>
+                        <td>Mini</td>
+                        <td>$4.00</td>
+                     </tr>
+                     <tr>
+                        <td>Cheese Pizza(+1.00 For Extra Toppings)</td>
+                        <td>Medium</td>
+                        <td>$4.00</td>
+                     </tr>
+					 <tr>
+                        <td>Cheese Pizza(+1.00 For Extra Toppings)</td>
+                        <td>Large</td>
+                        <td>$5.00</td>
+                     </tr>
+					 <tr>
+                        <td>Cheese Pizza(+1.00 For Extra Toppings)</td>
+                        <td>Extra Large</td>
+                        <td>$6.00</td>
+                     </tr>
+					  <tr>
+                        <td>Mini Cheese Pizza(+1.00 For Extra Toppings)</td>
+                        <td>Mini</td>
+                        <td>$2.50</td>
+                     </tr>
+                  </table>
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Sides</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Hot Wings</td>
+                        <td>6 Pc.</td>
+                        <td>$5.00</td>
+                     </tr>
+                     <tr>
+                        <td>Hot Wings</td>
+                        <td>12 Pc.</td>
+                        <td>$9.99</td>
+                     </tr>
+                     <tr>
+                        <td>Cinnamon Bites</td>
+                        <td>32 Pc.</td>
+                        <td>$3.00</td>
+                     </tr>
+                     <tr>
+                        <td>Cheesy Bread</td>
+                        <td>N/a Pc.</td>
+                        <td>$4.50</td>
+                     </tr>
+                     </td>
+                  </table>
+                  <br />
+            </tr>
+            <tr>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Drinks </th>
+                     <tr id="thead">
+                        <td>Drink</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Manzanita Soda</td>
+                        <td>20 Oz.</td>
+                        <td>$1.50</td>
+                     </tr>
+                     <tr>
+                        <td>Manzanita Soda</td>
+                        <td>2 Lt.</td>
+                        <td>$2.00</td>
+                     </tr>
+                     <tr>
+                        <td>Sierra Mist Soda</td>
+                        <td>20 Oz.</td>
+                        <td>$1.50</td>
+                     </tr>
+                     <tr>
+                        <td>Sierra Mist Soda</td>
+                        <td>2 Lt.</td>
+                        <td>$2.00</td>
+                     </tr>
+                     <tr>
+                        <td>Pepsi Soda</td>
+                        <td>20 Oz.</td>
+                        <td>$1.50</td>
+                     </tr>
+                     <tr>
+                        <td>Pepsi Soda</td>
+                        <td>2 Lt.</td>
+                        <td>$2.00</td>
+                     </tr>
+                     <tr>
+                        <td>Pizza Loca Water Bottle</td>
+                        <td>20.Oz</td>
+                        <td>N/A</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+               <td>
+                  <table border="1">
+                     <th colspan="3">Specials</th>
+                     <tr id="thead">
+                        <td>Food</td>
+                        <td>Size</td>
+                        <td>Price</td>
+                     </tr>
+                     <tr>
+                        <td>Gigante Pizza(Just cheese)</td>
+                        <td>32 Slices</td>
+                        <td>$10.99</td>
+                     </tr>
+                     <tr>
+                        <td>Gigante Pizza (With Peperonni)</td>
+                        <td>32 Slices</td>
+                        <td>$13.99</td>
+                     </tr>
+                     <tr>
+                        <td>Gigante Trio(3 Toppings ) </td>
+                        <td>32 Slices</td>
+                        <td>$16.50</td>
+                     </tr>
+                     <tr>
+                        <td>Gigante With Free Soda (2 toppings)</td>
+                        <td>32 Slices</td>
+                        <td>$16.50</td>
+                     </tr>
+					 <tr>
+                        <td>Gigante With Free Pepsi (1 toppings)</td>
+                        <td>32 Slices</td>
+                        <td>$12.99</td>
+                     </tr>
+					 <tr>
+                        <td>Pasta</td>
+                        <td>Plate Full</td>
+                        <td>$3.99</td>
+                     </tr>
+                     <tr>
+                        <td>Pizza (2 toppings)(Limited Time Offer)</td>
+                        <td>Large</td>
+                        <td>$5.99</td>
+                     </tr>
+                  </table>
+                  <br />
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--***END MENU TABLES***-->
+      <div id="favorites">
+         <h3 class="favorites">LIST YOUR 5 FAVORITE ITEMS</h3>
+         <table>
+            <th colspan="4">My Favorites</th>
+            <tr id="thead">
+               <td>Number</td>
+               <td>Item</td>
+               <td>Size</td>
+               <td>Price</td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td>La Gigante (With Peperonni)</td>
+               <td>32 Slices</td>
+               <td>$13.99</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>La Gigante Trio(Sausage Peperonni Pineapple)</td>
+              <td>32 Slices</td>
+              <td>$16.50</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Cinnamon Bites</td>
+              <td> 32 Pieces </td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Pizza (Just Cheese)</td>
+              <td>Large</td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Manzanita Soda</td>
+              <td> 20 Oz. </td>
+              <td>$1.50</td>
+            </tr>
+         </table>
+      </div>
+      <div class="center">
+         <table>
+            <th colspan="2" id="healthychoice">
+               <h2>
+               Heathier Choice</h4>
+            </th>
+            <tr>
+              <td>Pizza Loca Bottled Water- Price: N/A</td>
+               <td> Mini Cheese Pizza - Price $2.49 (If you eat alone)</td>
+			   <td> Medium Pizza Just cheese- Price 4.99            </td>
+            <tr>
+
+               <td colspan="2">
+                  <p>Drinking just plain water is healthier because you are consuming a lot less sugar than drinking a soda.</p>
+				  <p>Eating a Mini Cheese pizza is healthier because if you are only eating it by yourself its filling and no just cheese reduces fat by a bit.</p>
+				  <p>Eating Just cheese Medium pizza is also healthier considering how much you eat 3 slices or so should be good any more would make it bad for health due to fat.</p>
+				  <p>&copy; 2017 Kenny Simon (T.E.C HTML PROJECT)<p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <!--FOOTER-->
+      <div id="footer">
+      </div>
+      <!--FOOTER-->
+      <!--Scripts-->
+      <script src=""></script>
+      <!--endScripts-->
+   </body>
+</html>
